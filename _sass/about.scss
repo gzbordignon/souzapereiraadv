@@ -1,0 +1,18 @@
+@media (max-width: 900px) {
+	#about-page {
+		.container {
+			width: 90% !important;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	#about-page {
+		.container {
+			width: 80% !important;
+			.cards {
+				max-width: 25rem !important;
+			}
+		}
+	}
+}

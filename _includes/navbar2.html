@@ -1,0 +1,17 @@
+<div id="gold-bar"></div>
+<nav>
+	<div class="container">
+		<a href="#" class="navbar-brand">
+			<img src="/assets/images/logo.png" alt="">
+		</a>
+		<ul>
+			{% for item in site.data.navigation %}
+				<li>
+					<a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>
+						{{ item.name }}
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</nav>

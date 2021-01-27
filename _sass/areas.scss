@@ -1,0 +1,11 @@
+#areas-banner {
+	// background: url('/assets/images/areas.jpg') no-repeat center center / cover;
+}
+
+@media (max-width: 800px) {
+	#areas-page {
+		.container {
+				width: 90% !important;
+			}
+	}
+}

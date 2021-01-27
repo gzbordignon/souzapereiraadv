@@ -3,65 +3,73 @@ layout: default
 title: Contato
 ---
 
-<section id="banner">Entre em contato</section>
-<section id="contact-page">
-  <div class="left-column">
-    <div class="column adv-column">
-      <h2>Advogados</h2>
-      <div class="adv">
-        <h3>Dr. Kassius Souza</h3>
-        <p>OAB/RS: 113.181</p>
-        <p>E-mail: kassius@souzapereiraadvogados.com.br</p>
-        <p>Celular: (51)98047-0707</p>
-      </div>
-      <div class="adv">
-        <h3>Dr. Nilson Pereira</h3>
-        <p>OAB/RS: 80.657</p>
-        <p>E-mail: nilson@souzapereiraadvogados.com.br</p>
-        <p>Celular: (51)99317-2618</p>
-      </div>
-    </div>
-    <div class="column address-column">
-      <h2>Endereço</h2>
-      <p>
-        Av. Dorival Cândido Luz de Oliveira, nº 343 - loja 110, Centro,
-        Gravataí-RS.
-      </p>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13829.505162565953!2d-50.99824049564377!3d-29.93985326482117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95190b47149029ff%3A0x5055902af6faecb8!2sAv.%20Dorival%20C%C3%A2ndido%20Luz%20de%20Oliveira%2C%20343%20-%20Centro%2C%20Gravata%C3%AD%20-%20RS%2C%2094020-011!5e0!3m2!1spt-BR!2sbr!4v1605472522676!5m2!1spt-BR!2sbr"
-        width="100%"
-        frameborder="0"
-        style="border: 0"
-        allowfullscreen=""
-        aria-hidden="false"
-        tabindex="0"
-      ></iframe>
-    </div>
-    <div class="column horarios-column">
-      <h2>Atendimento</h2>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis,
-        suscipit.
-      </p>
-    </div>
-  </div>
-  <div class="right-column">
-    <h2>Mande uma mensagem</h2>
-    <form action="">
-      <div class="form-control">
-        <label for="name">Nome</label>
-        <input type="text" />
-      </div>
-      <div class="form-control">
-        <label for="phone">Telefone</label>
-        <input type="text" />
-      </div>
-      <div class="form-control">
-        <label for="email">Mensagem</label>
-        <textarea></textarea>
-      </div>
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
-</section>
- 
+<div id="contact-banner" class="banner">
+	<div class="container">
+		<h1>Contato</h1>
+	</div>
+</div>
+
+<div id="contact-page">
+	<div class="container w-75 my-5">
+		<div class="form-container mb-5">
+			<h3 class="mb-4 text-center">Mande uma mensagem para nós!</h3>
+			<form action="">
+				<div class="row mb-4">
+					<div class="col">
+						<input type="text" class="form-control" placeholder="Nome completo">
+					</div>
+					<div class="col">
+						<input type="text" class="form-control" placeholder="E-mail">
+					</div>
+				</div>
+				<div class="row mb-4">
+					<div class="col">
+						<input type="text" class="form-control" placeholder="Telefone">
+					</div>
+					<div class="col">
+						<select class="form-select" aria-label="Default select example">
+							<option selected>Selecione o assunto</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="info-container">
+			<div class="row">
+				<div class="col-6 text-center">
+					<h3 class="text-uppercase">Advogados</h3>
+					<div class="lawyers ">
+						<div class="laywer my-4">
+							<h5>Dr. Kassius Souza</h5>
+							<small>OAB/RS: 113.181</small><br>
+							<small>Celular: (51)98047-0707</small><br>
+							<small>E-mail: kassius@souzapereiraadvogados.com.br</small>
+						</div>
+						<div class="laywer my-4">
+							<h5>Dr. Nilson Pereira</h5>
+							<small>OAB/RS: 80.657</small><br>
+							<small>Celular: (51)99317-2618</small><br>
+							<small>E-mail: nilson@souzapereiraadvogados.com.br</small>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-6  text-center">
+					<div class="address">
+						<h3 class="text-uppercase mb-4">Endereço</h3>
+						<small>Av. Dorival Cândido Luz de Oliveira, nº 343 - loja 110, Centro, Gravataí-RS.</small><br><br>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4111.546034532817!2d-51.00180726340875!3d-29.939622186906888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95190b47149029ff%3A0x8dda3bb96aa15ba3!2sAv.%20Dorival%20C%C3%A2ndido%20Luz%20de%20Oliveira%2C%20343%20-%20Sala%20110%20-%20Centro%2C%20Gravata%C3%AD%20-%20RS%2C%2094020-011!5e0!3m2!1spt-BR!2sbr!4v1611683758695!5m2!1spt-BR!2sbr" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	

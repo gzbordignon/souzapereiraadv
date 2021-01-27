@@ -1,0 +1,90 @@
+#carousel-section {
+	border-top: 2px solid $main-color;
+	.carousel-item {
+		height: 80vh;
+		img {
+		    object-fit: fill;
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		    z-index: 0;
+		}
+	}
+}
+
+#areas-section {
+	.container {
+		.areas-container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr); 
+			grid-gap: 20px;
+			.area-box {
+				border-radius: 15px;
+				background: red;
+				height: 300px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.btn {
+
+					width: 250px;
+					border: 2px solid white;
+					padding: 10px 10px;
+					color: white;
+					font-size: 22px;
+					text-transform: uppercase;
+					font-weight: bold;
+				}
+			}
+			.area-prev {
+				background: url('/assets/images/previdenciario.jpeg') no-repeat center top / cover;
+				box-shadow: inset 0 0 0 1000px rgba(232,232,0,.5);
+			}
+
+			.area-civel {
+				background: url('/assets/images/civel.jpg') no-repeat center center / cover;
+				box-shadow: inset 0 0 0 1000px rgba(0, 70, 220, .5);
+			}			
+			.area-trab {
+				background: url('/assets/images/trab.jpg') no-repeat center center / cover;
+				box-shadow: inset 0 0 0 1000px rgba(220, 0, 0, .5);
+			}
+			.area-imob {
+				background: url('/assets/images/imob.jpg') no-repeat right bottom / cover;
+				box-shadow: inset 0 0 0 1000px rgba(0, 220, 23, .5);
+			}
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	#areas-section {
+		.container {
+			.areas-container {
+				.area-box {
+					height: 200px;
+					.btn {
+						width: 200px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	#areas-section {
+		.container {
+			width: 80%;
+			.areas-container {
+				grid-template-columns: repeat(1, 1fr); 
+				.area-box {
+					height: 200px;
+					.btn {
+						width: 250px;
+					}
+				}
+			}
+		}
+	}	
+}

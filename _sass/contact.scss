@@ -1,0 +1,47 @@
+@media (max-width: 800px) {
+	#contact-page {
+		.container {
+			.info-container {
+				.row {
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					flex-wrap: nowrap;
+					.col-6 {
+						width: 100% !important;
+					}
+					div:first-child {
+						margin-bottom: 50px;
+					}
+					div {
+						.address {
+							iframe {
+
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	#contact-page {
+		.container {
+			.form-container {
+				form {
+					.row {
+						display: flex;
+						flex-direction: column;
+						div:first-child {
+							margin-bottom: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
