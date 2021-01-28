@@ -74,6 +74,9 @@
 }
 
 @media (max-width: 600px) {
+	#carousel-section {
+		display: none;
+	}
 	#areas-section {
 		.container {
 			width: 80%;
