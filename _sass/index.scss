@@ -115,7 +115,36 @@
 	}
 }
 
+@media (max-width: 1000px) {
+	#about-us {
+		.container {
+			width: 100%;
+			.box-container {
+				display: flex;
+				justify-content: unset;
+			}
+		}
+	}
+}
+
 @media (max-width: 800px) {
+	#about-us {
+		.container {
+			width: 100%;
+			.box-container {
+				display: grid !important;
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 20px;
+				.box {
+					width: auto;
+				}
+				.box:last-child {
+					grid-column-start: 1;
+					grid-column-end: 3;
+				}
+			}
+		}
+	}
 	#areas-section {
 		.container {
 			.areas-container {
@@ -130,7 +159,36 @@
 	}
 }
 
+@media (max-width: 700px) {
+	#home-banner {
+		p:first-child {
+			font-size: 30px;
+		}
+		p:nth-child(2) {
+			font-size: 80px;
+			font-family: 'Poppins-Bold';
+			letter-spacing: 5px;
+		}
+		p:nth-child(3) {
+			font-size: 15px;
+		}
+	}
+}
+
 @media (max-width: 600px) {
+	#home-banner {
+		p:first-child {
+			font-size: 20px;
+		}
+		p:nth-child(2) {
+			font-size: 65px;
+			font-family: 'Poppins-Bold';
+			letter-spacing: 5px;
+		}
+		p:nth-child(3) {
+			font-size: 15px;
+		}
+	}
 	#carousel-section {
 		display: none;
 	}
