@@ -1,6 +1,6 @@
-$main-color: #bf8604;
-
+$main-color: rgb(133,76,7);
 @import 'navbar';
+@import 'sidebar';
 @import 'index';
 @import 'about';
 @import 'areas';
@@ -8,14 +8,39 @@ $main-color: #bf8604;
 @import 'footer';
 @import 'utility';
 
+@font-face {
+	font-family: 'Poppins-Regular';
+	src: url('../fonts/Poppins-Regular.ttf');
+}
+@font-face {
+	font-family: 'Poppins-Medium';
+	src: url('../fonts/Poppins-Medium.ttf');
+}
+@font-face {
+	font-family: 'Poppins-Bold';
+	src: url('../fonts/Poppins-Bold.ttf');
+}
+@font-face {
+	font-family: 'Kiona-Regular';
+	src: url('../fonts/Kiona-Regular.ttf');
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
+body {
+	font-family: 'Poppins-Regular';
+}
+
 ul {
 	list-style: none;
+}
+
+img {
+	width: 100%;
 }
 
 a {

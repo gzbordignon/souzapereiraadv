@@ -8,10 +8,28 @@
 	<title>{{ page.title }}</title>
 </head>
 <body>
-	{% include navbar3.html %}
-	{{ content }}
+	{% include whatsapp_button.html %}
+	{% include navbar.html %}
+	{% if page.url == '/' %}
+		{{ content }}
+	{% else %}
+		<main class="row">
+			<div class="col-3">
+				<!-- <div class="container px-5" style=""> -->
+					{% include sidebar.html %}
+				<!-- </div> -->
+			</div>
+			<div class="col-9">
+				<div class="container">
+					{{ content }}
+				</div>
+			</div>
+		</main>
+	{% endif %}
 	{% include footer.html %}
 
+
+	<script src="https://kit.fontawesome.com/615c348569.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 	<script src="/assets/javascripts/app.js"></script>
 </body>

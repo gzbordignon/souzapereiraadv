@@ -1,8 +1,21 @@
 - name: Home
   link: /
+  sidelink: /
 - name: Sobre Nós
   link: /about.html
+  sidelink: /about.html
 - name: Áreas de Atuação
-  link: /areas.html
+  sidelink: /#areas-section
+  subareas:
+    - name: Previdenciário
+      link: areas/previdenciário.html
+    - name: Cível
+      link: areas/civel.html
+    - name: Trabalhista
+      link: areas/trabalhista.html
+    - name: Imobiliário
+      link: areas/imobiliario.html
+
 - name: Contato
   link: /contact.html
+  sidelink: /contact.html

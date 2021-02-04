@@ -13,6 +13,63 @@
 
 }
 
+#home-banner {
+	height: 80vh;
+	background: url('../images/bg-img-new3.png') no-repeat center center / cover;
+	p {
+		color: white;
+	}
+	p:first-child {
+		font-size: 40px;
+	}
+	p:nth-child(2) {
+		font-size: 100px;
+		font-family: 'Poppins-Bold';
+		letter-spacing: 5px;
+	}
+	p:nth-child(3) {
+		font-size: 20px;
+	}
+	a {
+		background: linear-gradient(90deg, rgba(133,76,7,1) 0%, rgba(255,158,0,1) 100%);
+		font-family: 'Poppins-Bold';
+		padding: 15px 25px;
+		border-radius: 3px;
+		color: rgb(0,0,0);
+		font-weight: 700;
+		letter-spacing: 2px;
+		font-size: 12px;
+	}
+	a:hover {
+		color: white;
+	}
+}
+
+#about-us {
+	background: black;
+	color: white;
+	padding: 40px 0;
+	.container {
+		.box-container {
+			.box {
+				width: 30%;
+				i {
+					margin-bottom: 20px;
+				}
+				h3 {
+					font-size: 18px;
+					font-family: 'Poppins-Bold';
+					letter-spacing: 2px;
+					margin-bottom: 20px;
+				}
+				p {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
 #areas-section {
 	.container {
 		.areas-container {

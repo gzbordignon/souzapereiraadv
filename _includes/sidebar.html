@@ -1,0 +1,18 @@
+<nav class="menu px-5">
+	<h5 class="fw-bold mb-4">Menu</h5>
+	<ul class="navbar-nav">
+		{% for item in site.data.navigation %}
+			<li class="nav-item mb-3">
+				{% if page.url == item.sidelink %}  
+					<a href="{{ item.sidelink }}" class="nav-link p-2 fw-bolder">
+						<span>&rarr;</i></span>  {{ item.name }}
+					</a>
+				{% else %}
+					<a href="{{ item.sidelink }}" class="nav-link menu-link p-2">
+						<span class="icon-container"></span> {{ item.name }}
+					</a>
+				{% endif %}
+			</li>
+		{% endfor %}
+	</ul>
+</nav>

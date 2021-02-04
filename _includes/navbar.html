@@ -1,26 +1,50 @@
-<div id="gold-bar"></div>
-<nav>
-	<div class="cont">
-		<ul class="links-left">
-			{% for item in site.data.navigation_left %}
-				<li>
-					<a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>
-						{{ item.name }}
-					</a>
-				</li>
-			{% endfor %}
-		</ul>
-		<a href="#" class="navbar-brand">
-			<img src="/assets/images/logo.png" alt="">
-		</a>
-		<ul class="links-right">
-			{% for item in site.data.navigation_right %}
-				<li>
-					<a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>
-						{{ item.name }}
-					</a>
-				</li>
-			{% endfor %}
-		</ul>
-	</div>
-</nav>
+<header>
+	<nav class="top-nav">
+		<div class="container-fluid">
+			<p class="">
+				<i class="fas fa-phone-alt"></i> (51) 9-9999-9999 <span>&middot;</span> <i class="far fa-envelope-open"></i> atendimento@souzapereiraadvogados.com.br <span>&middot;</span> <i class="far fa-clock"></i> Seg - Sex 08:30 - 11:30 / 13:30 - 17:30
+			</p>
+		</div>
+	</nav>
+	<nav class="navbar navbar-expand-lg pt-4 {% if page.url != '/'%} shadow mb-5 rounded{% endif %}">
+		<div class="container-fluid">
+			<a href="/" class="navbar-brand d-flex flex-column align-items-center">
+				<div class="logo">
+					<img class="" src="/assets/images/newlogo.png" alt="" >
+				</div> 
+				<div class="logo-name text-uppercase d-flex flex-column text-center">
+					<span class="first-logo-name ">Souza Pereira</span> 
+					<span class="second-logo-name">Advogados</span>
+				</div>
+			</a>
+			<ul class="navbar-nav">
+				{% for item in site.data.navigation %}
+					{% if item.name == "Áreas de Atuação" %}
+						<li class="nav-item dropdown">
+							<a href="" class="dropdown-toggle nav-link  text-light {% if page.url == item.link %}active{% endif %}" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+								{{ item.name }}
+							</a>
+						  	<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						    	<li><a class="dropdown-item" href="/areas/previdenciario.html">Previdenciário</a></li>
+							    <li><hr class="dropdown-divider"></li>
+							    <li><a class="dropdown-item" href="/areas/civel.html">Cível</a></li>
+							    <li><hr class="dropdown-divider"></li>
+							    <li><a class="dropdown-item" href="/areas/trabalhista.html">Trabalhista</a></li>
+							    <li><hr class="dropdown-divider"></li>
+							    <li><a class="dropdown-item" href="/areas/imobiliario.html">Imobiliário</a></li>
+						  	</ul>
+						</li>
+						{% else %}
+						<li>
+							<a href="{{ item.link }}" class="nav-link  text-light {% if page.url == item.link %}active{% endif %}">
+								{{ item.name }}
+							</a>
+						</li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
+	</nav>
+</header>
+
+
