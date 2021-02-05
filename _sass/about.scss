@@ -9,9 +9,9 @@
 @media (max-width: 768px) {
 	#about-page {
 		.container {
-			width: 80% !important;
+			width: 100% !important;
 			.cards {
-				max-width: 25rem !important;
+				max-width: auto !important;
 			}
 		}
 	}
