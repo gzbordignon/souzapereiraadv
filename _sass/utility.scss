@@ -14,3 +14,23 @@
 		color: white;
 	}
 }
+
+.contact-button {
+		background: linear-gradient(90deg, rgba(133,76,7,1) 0%, rgba(255,158,0,1) 100%);
+		font-family: 'Poppins-Bold';
+		padding: 15px 25px;
+		border-radius: 3px;
+		color: rgb(0,0,0);
+		font-weight: 700;
+		letter-spacing: 2px;
+		font-size: 12px;
+		span {
+			font-size: 20px;
+			font-weight: bolder;
+		}
+
+}
+
+.contact-button:hover {
+	color: white;
+}
