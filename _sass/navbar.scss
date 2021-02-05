@@ -102,3 +102,29 @@ header {
 		}
 	}
 }
+
+@media (max-width: 500px) {
+	header {
+		.navbar {
+			height: 500px;
+			.container-fluid {
+				display: flex;
+				flex-direction: column !important;
+				justify-content: center;
+				align-items: center;
+				.navbar-nav {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					li {
+					}
+					.dropdown-menu {
+					    position: absolute;
+					    top: 50px;
+					    z-index: 10000;
+					}
+				}
+			}
+		}
+	}}

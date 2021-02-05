@@ -14,7 +14,7 @@
 }
 
 #home-banner {
-	height: 80vh;
+	height: 500px;
 	background: url('../images/bg-img-new3.png') no-repeat center center / cover;
 	p {
 		color: white;
@@ -189,8 +189,21 @@
 			font-size: 15px;
 		}
 	}
-	#carousel-section {
-		display: none;
+
+	#about-us {
+		.container {
+			width: 100%;
+			.box-container {
+				display: flex !important;
+				flex-direction: column;
+				.box {
+					width: auto;
+				}
+				.box:last-child {
+	
+				}
+			}
+		}
 	}
 	#areas-section {
 		.container {
@@ -206,4 +219,20 @@
 			}
 		}
 	}	
+}
+
+@media (max-width: 500px) {
+	#home-banner {
+		p:first-child {
+			font-size: 20px;
+		}
+		p:nth-child(2) {
+			font-size: 40px;
+			font-family: 'Poppins-Bold';
+			letter-spacing: 5px;
+		}
+		p:nth-child(3) {
+			font-size: 10px;
+		}
+	}
 }
