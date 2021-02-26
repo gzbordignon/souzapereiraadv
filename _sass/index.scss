@@ -66,6 +66,10 @@
 					text-transform: uppercase;
 					font-weight: bold;
 				}
+				.btn:hover {
+					color: black;
+					border: 2px solid black;
+				}
 			}
 			.area-prev {
 				background: url('/assets/images/prev.jpeg') no-repeat center top / cover;

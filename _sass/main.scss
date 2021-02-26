@@ -25,6 +25,11 @@ $main-color: rgb(133,76,7);
 	src: url('../fonts/Kiona-Regular.ttf');
 }
 
+@font-face {
+	font-family: 'Helvetica LT STD';
+	src: url('../fonts/helvetica/helvetica-lt-std-bold-condensed-oblique.otf');
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -39,7 +44,7 @@ html, body {
 body {
 	overflow: auto; 
 	-webkit-overflow-scrolling: touch;
-	font-family: 'Poppins-Regular';
+	font-family: 'Helvetica LT STD';
 }
 
 ul {
